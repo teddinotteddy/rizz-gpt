@@ -1,28 +1,18 @@
 import React, { useState } from 'react'
-import { Configuration, OpenAIApi } from 'openai'
 import Head from 'next/head'
-
-const configuration = new Configuration({
-  apiKey: process.env.TOKEN
-})
-const openai = new OpenAIApi(configuration)
 
 export default function Home() {
   const [pickupLine, setPickupLine] = useState("")
 
   const generateLine = async() => {
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: "generate a pickup line",
-      temperature: 0.7,
-      max_tokens: 256,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0
+    const response = await fetch("/api/generate", {
+      method: "GET"
     })
 
-    setPickupLine(response.data.choices[0].text)
-  }
+    const res = await response.json()
+    
+    setPickupLine(res.line)
+}
 
   return (
     <div>
