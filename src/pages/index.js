@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Rizz-GPT</title>
         <meta name="description" content="Generate W pickup lines." />
         <meta name="viewport" content="width=device-width, initial-sca  le=1" />
       </Head>
