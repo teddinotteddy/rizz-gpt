@@ -3,7 +3,7 @@ import { Configuration, OpenAIApi } from 'openai'
 import Head from 'next/head'
 
 const configuration = new Configuration({
-  apiKey: "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"
+  apiKey: process.env.TOKEN
 })
 const openai = new OpenAIApi(configuration)
 
