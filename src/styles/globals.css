@@ -1,5 +1,8 @@
 main {
   text-align: center;
   font-family: arial;
+}
+
+body {
   background-image: url("/Heart.png");
 }
