@@ -24,6 +24,7 @@ export default function Home() {
       <main>
         <h1>Rizz-GPT</h1>
         <p>Do you have L rizz? Don't panic, Rizz-GPT is here! Generate W pickup lines that will help you rizz up whoever!</p>
+        <p>(Use at your own risk. Rizz-GPT is not liable for any heartbreaks, friendzones, or breakups.)
         <p>{pickupLine}</p>
         <button onClick={generateLine}>Generate</button>
       </main>
