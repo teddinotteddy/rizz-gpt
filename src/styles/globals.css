@@ -1,8 +1,21 @@
 main {
   text-align: center;
   font-family: arial;
+  color: black;
+  background-color: white;
 }
 
 body {
-  background-image: url("/Heart.png");
+  background: url('./Heart.PNG') 0 0 repeat;
+  background-size: 150px 150px;
+  background-color: pink;
+}
+
+button {
+  border-radius: 10px;
+  color: black;
+  background-color: pink;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
 }
