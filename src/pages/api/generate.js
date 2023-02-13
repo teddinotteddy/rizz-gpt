@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     try {
         const response = await openai.createCompletion({
             model: "text-davinci-003",
-            prompt: "Make 5 unique and catchy pickup lines.",
+            prompt: "Make 5 unique and catchy pickup lines. Don't make any lines that contain: alphabet, google, or a campfire.",
             temperature: 0.7,
             max_tokens: 256,
             top_p: 1,
